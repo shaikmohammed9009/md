@@ -1,23 +1,19 @@
 import React from 'react';
 import "./index.css";
-import Img from "./Image"
+import Image from "./Abdulgafoor/Myimage";
 const Myfun = (props) =>{
    return(
        <div classNames="cards">
            <div className="card">
-               {/* /* <img className="card_img" alt="shaik mohammed" src={props.image}/>
-                */ }
-                <Img image={props.image}/>
+           <img className="card_img" alt="shaik mohammed" src={props.pimg}/>
                <div className="card__info">
-               <h3 className="Name">{props.Name}</h3>
-                   <h3 className="Movie">{props.movie}</h3>
-                   <a href={props.links}>
-                       <button className="btnc">WACTH NOW</button>
-                   </a>
+               <h3 className="Name">{props.pn}</h3>
+                   <h3 className="Movie">{props.Gm}</h3>
+                   <h3 className="Movie">{props.pp}</h3>
+                  
                </div>
            </div>
        </div>
    );
 }
-
 export default Myfun;
